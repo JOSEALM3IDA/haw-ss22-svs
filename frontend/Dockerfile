@@ -1,10 +1,9 @@
 FROM ubuntu
-# TODO: Replace value of CI_PROJECT_NAME with team name. Keep prefix "svs"!
-ENV CI_PROJECT_NAME='svs01'
+ENV CI_PROJECT_NAME='svs23'
 ENV CI_PROJECT_NAMESPACE='ful'
 ENV DEBIAN_FRONTEND='noninteractive'
 ENV TZ=Europe/Berlin
-LABEL authors='Michael.Deichen@haw-hamburg.de'
+LABEL authors='josefernando.estevesalmeida@haw-hamburg.de,ruben.lousada@haw-hamburg.de'
 
 RUN apt-get update && apt-get install -y \
         apache2 \
