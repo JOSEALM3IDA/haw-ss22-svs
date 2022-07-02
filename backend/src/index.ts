@@ -5,7 +5,7 @@ const app = express();
 
 // declare a route with a response
 app.get('/secure', (req, res) => {
-    res.send(req.headers);
+    res.send(`Hello user ${req.get("x-forwarded-user")}!\nCert subject: ${req.get("x-forwarded-subject")}`);
 });
 
 // start the server
