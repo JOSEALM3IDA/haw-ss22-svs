@@ -5,8 +5,8 @@
 *.attr
 *.csr
 *.crt
-serial*
-index*
+tls/*/serial*
+tls/*/index*
 crlnumber*
 
 # Logs
