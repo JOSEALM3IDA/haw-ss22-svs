@@ -1,5 +1,4 @@
 import express from 'express';
-import { TLSSocket }  from 'tls'
 
 const app = express();
 
