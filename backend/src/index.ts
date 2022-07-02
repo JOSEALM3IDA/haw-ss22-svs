@@ -5,8 +5,7 @@ const app = express();
 
 // declare a route with a response
 app.get('/secure', (req, res) => {
-    const cert = ((req.socket) as TLSSocket).getPeerCertificate();
-    res.send("Hello " + cert.subject.CN + "!");
+    res.send(req.headers);
 });
 
 // start the server
