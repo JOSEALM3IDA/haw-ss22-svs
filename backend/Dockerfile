@@ -12,4 +12,4 @@ COPY . /usr/src/app
 
 EXPOSE 8081
 
-CMD ["node", "."]
+CMD ["npm", "run", "build-run"]
