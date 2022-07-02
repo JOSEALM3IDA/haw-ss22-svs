@@ -1,3 +1,14 @@
+*.pem
+*.key
+*.crl
+*.old
+*.attr
+*.csr
+*.crt
+serial*
+index*
+crlnumber*
+
 # Logs
 logs
 *.log
